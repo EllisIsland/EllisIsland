@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  FilterViewController.h
 //  EllisNYC
 //
 //  Created by Vladyslav Gusakov on 4/22/16.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DAO.h"
 
-@interface MainViewController : UITableViewController <DAODelegate>
-
--(void) MainTableViewReloadData;
+@interface FilterViewController : UIViewController
 
 @end

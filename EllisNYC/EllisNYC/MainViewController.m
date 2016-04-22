@@ -7,8 +7,11 @@
 //
 
 #import "MainViewController.h"
+#import "CustomCell.h"
 
-@interface MainViewController ()
+@interface MainViewController () {
+    DAO *dao;
+}
 
 @end
 
@@ -17,11 +20,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    dao = [DAO sharedManager];
+    dao.delegate = self;
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void) MainTableViewReloadData {
+    [self.tableView reloadData];
+    NSLog(@"table view reloaded count: %ld", dao.sortedProgramsList.count);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +46,39 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return dao.sortedProgramsList.count;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"Cell";
     
-    // Configure the cell...
+    CustomCell *cell = (CustomCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    // populate your cell
+    
+    cell.agency.text = [[dao.sortedProgramsList objectAtIndex:indexPath.row] agency];
+    cell.borough.text = [[dao.sortedProgramsList objectAtIndex:indexPath.row] borough];
+    cell.number.text = [[dao.sortedProgramsList objectAtIndex:indexPath.row] number];
+    cell.age.text = [[dao.sortedProgramsList objectAtIndex:indexPath.row] age_group];
+    cell.address.text = [[dao.sortedProgramsList objectAtIndex:indexPath.row] address];
     
     return cell;
 }
-*/
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 96;
+}
 
 /*
 // Override to support conditional editing of the table view.

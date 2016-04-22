@@ -10,13 +10,18 @@
 		6B009CFD1CCA8F6900D22806 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B009CFC1CCA8F6900D22806 /* main.m */; };
 		6B009D001CCA8F6900D22806 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B009CFF1CCA8F6900D22806 /* AppDelegate.m */; };
 		6B009D061CCA8F6900D22806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B009D041CCA8F6900D22806 /* Main.storyboard */; };
-		6B009D091CCA8F6900D22806 /* EllisNYC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B009D071CCA8F6900D22806 /* EllisNYC.xcdatamodeld */; };
 		6B009D0B1CCA8F6900D22806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B009D0A1CCA8F6900D22806 /* Assets.xcassets */; };
 		6B009D0E1CCA8F6900D22806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B009D0C1CCA8F6900D22806 /* LaunchScreen.storyboard */; };
 		6B009D191CCA8F6900D22806 /* EllisNYCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B009D181CCA8F6900D22806 /* EllisNYCTests.m */; };
 		6B009D241CCA8F6900D22806 /* EllisNYCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B009D231CCA8F6900D22806 /* EllisNYCUITests.m */; };
+		B30FD47B1CCABC6400035170 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30FD47A1CCABC6400035170 /* FilterViewController.m */; };
+		B30FD4801CCAC16A00035170 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B30FD47F1CCAC16A00035170 /* CustomCell.m */; };
 		B3DCFC901CCA9811006362B4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3DCFC8E1CCA9811006362B4 /* Model.xcdatamodeld */; };
 		B3DCFC931CCA983A006362B4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCFC921CCA983A006362B4 /* MainViewController.m */; };
+		B3DCFC9E1CCA9AE1006362B4 /* ProgramMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCFC9B1CCA9AE1006362B4 /* ProgramMO+CoreDataProperties.m */; };
+		B3DCFC9F1CCA9AE1006362B4 /* ProgramMO.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCFC9D1CCA9AE1006362B4 /* ProgramMO.m */; };
+		B3DCFCA21CCA9AEE006362B4 /* Program.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCFCA11CCA9AEE006362B4 /* Program.m */; };
+		B3DCFCA51CCA9C1F006362B4 /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCFCA41CCA9C1F006362B4 /* DAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,6 @@
 		6B009CFE1CCA8F6900D22806 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B009CFF1CCA8F6900D22806 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6B009D051CCA8F6900D22806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6B009D081CCA8F6900D22806 /* EllisNYC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllisNYC.xcdatamodel; sourceTree = "<group>"; };
 		6B009D0A1CCA8F6900D22806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B009D0D1CCA8F6900D22806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B009D0F1CCA8F6900D22806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,9 +56,21 @@
 		6B009D1F1CCA8F6900D22806 /* EllisNYCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EllisNYCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B009D231CCA8F6900D22806 /* EllisNYCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EllisNYCUITests.m; sourceTree = "<group>"; };
 		6B009D251CCA8F6900D22806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B30FD4791CCABC6400035170 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		B30FD47A1CCABC6400035170 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		B30FD47E1CCAC16A00035170 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		B30FD47F1CCAC16A00035170 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		B3DCFC8F1CCA9811006362B4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B3DCFC911CCA983A006362B4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B3DCFC921CCA983A006362B4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B3DCFC9A1CCA9AE1006362B4 /* ProgramMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ProgramMO+CoreDataProperties.h"; path = "../ProgramMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B3DCFC9B1CCA9AE1006362B4 /* ProgramMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ProgramMO+CoreDataProperties.m"; path = "../ProgramMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B3DCFC9C1CCA9AE1006362B4 /* ProgramMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgramMO.h; path = ../ProgramMO.h; sourceTree = "<group>"; };
+		B3DCFC9D1CCA9AE1006362B4 /* ProgramMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgramMO.m; path = ../ProgramMO.m; sourceTree = "<group>"; };
+		B3DCFCA01CCA9AEE006362B4 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
+		B3DCFCA11CCA9AEE006362B4 /* Program.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Program.m; sourceTree = "<group>"; };
+		B3DCFCA31CCA9C1F006362B4 /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAO.h; sourceTree = "<group>"; };
+		B3DCFCA41CCA9C1F006362B4 /* DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +123,25 @@
 			children = (
 				6B009CFE1CCA8F6900D22806 /* AppDelegate.h */,
 				6B009CFF1CCA8F6900D22806 /* AppDelegate.m */,
+				B3DCFCA31CCA9C1F006362B4 /* DAO.h */,
+				B3DCFCA41CCA9C1F006362B4 /* DAO.m */,
+				B3DCFCA01CCA9AEE006362B4 /* Program.h */,
+				B3DCFCA11CCA9AEE006362B4 /* Program.m */,
 				B3DCFC911CCA983A006362B4 /* MainViewController.h */,
 				B3DCFC921CCA983A006362B4 /* MainViewController.m */,
+				B30FD4791CCABC6400035170 /* FilterViewController.h */,
+				B30FD47A1CCABC6400035170 /* FilterViewController.m */,
 				6B009D041CCA8F6900D22806 /* Main.storyboard */,
+				B30FD47E1CCAC16A00035170 /* CustomCell.h */,
+				B30FD47F1CCAC16A00035170 /* CustomCell.m */,
+				B3DCFC9A1CCA9AE1006362B4 /* ProgramMO+CoreDataProperties.h */,
+				B3DCFC9B1CCA9AE1006362B4 /* ProgramMO+CoreDataProperties.m */,
+				B3DCFC9C1CCA9AE1006362B4 /* ProgramMO.h */,
+				B3DCFC9D1CCA9AE1006362B4 /* ProgramMO.m */,
 				B3DCFC8E1CCA9811006362B4 /* Model.xcdatamodeld */,
 				6B009D0A1CCA8F6900D22806 /* Assets.xcassets */,
 				6B009D0C1CCA8F6900D22806 /* LaunchScreen.storyboard */,
 				6B009D0F1CCA8F6900D22806 /* Info.plist */,
-				6B009D071CCA8F6900D22806 /* EllisNYC.xcdatamodeld */,
 				6B009CFB1CCA8F6900D22806 /* Supporting Files */,
 			);
 			path = EllisNYC;
@@ -213,6 +240,7 @@
 				TargetAttributes = {
 					6B009CF71CCA8F6900D22806 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 55YGEFWX58;
 					};
 					6B009D131CCA8F6900D22806 = {
 						CreatedOnToolsVersion = 7.3;
@@ -276,8 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B009D091CCA8F6900D22806 /* EllisNYC.xcdatamodeld in Sources */,
+				B3DCFC9F1CCA9AE1006362B4 /* ProgramMO.m in Sources */,
+				B30FD47B1CCABC6400035170 /* FilterViewController.m in Sources */,
 				B3DCFC901CCA9811006362B4 /* Model.xcdatamodeld in Sources */,
+				B3DCFCA21CCA9AEE006362B4 /* Program.m in Sources */,
+				B30FD4801CCAC16A00035170 /* CustomCell.m in Sources */,
+				B3DCFC9E1CCA9AE1006362B4 /* ProgramMO+CoreDataProperties.m in Sources */,
+				B3DCFCA51CCA9C1F006362B4 /* DAO.m in Sources */,
 				6B009D001CCA8F6900D22806 /* AppDelegate.m in Sources */,
 				B3DCFC931CCA983A006362B4 /* MainViewController.m in Sources */,
 				6B009CFD1CCA8F6900D22806 /* main.m in Sources */,
@@ -423,7 +456,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EllisNYC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = onebittwo.com.EllisNYC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,7 +469,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EllisNYC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = onebittwo.com.EllisNYC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,16 +566,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		6B009D071CCA8F6900D22806 /* EllisNYC.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6B009D081CCA8F6900D22806 /* EllisNYC.xcdatamodel */,
-			);
-			currentVersion = 6B009D081CCA8F6900D22806 /* EllisNYC.xcdatamodel */;
-			path = EllisNYC.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		B3DCFC8E1CCA9811006362B4 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
