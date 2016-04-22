@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		6B009CFD1CCA8F6900D22806 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B009CFC1CCA8F6900D22806 /* main.m */; };
 		6B009D001CCA8F6900D22806 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B009CFF1CCA8F6900D22806 /* AppDelegate.m */; };
-		6B009D031CCA8F6900D22806 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B009D021CCA8F6900D22806 /* ViewController.m */; };
 		6B009D061CCA8F6900D22806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B009D041CCA8F6900D22806 /* Main.storyboard */; };
 		6B009D091CCA8F6900D22806 /* EllisNYC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B009D071CCA8F6900D22806 /* EllisNYC.xcdatamodeld */; };
 		6B009D0B1CCA8F6900D22806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B009D0A1CCA8F6900D22806 /* Assets.xcassets */; };
 		6B009D0E1CCA8F6900D22806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B009D0C1CCA8F6900D22806 /* LaunchScreen.storyboard */; };
 		6B009D191CCA8F6900D22806 /* EllisNYCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B009D181CCA8F6900D22806 /* EllisNYCTests.m */; };
 		6B009D241CCA8F6900D22806 /* EllisNYCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B009D231CCA8F6900D22806 /* EllisNYCUITests.m */; };
+		B3DCFC901CCA9811006362B4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3DCFC8E1CCA9811006362B4 /* Model.xcdatamodeld */; };
+		B3DCFC931CCA983A006362B4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCFC921CCA983A006362B4 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,6 @@
 		6B009CFC1CCA8F6900D22806 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B009CFE1CCA8F6900D22806 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B009CFF1CCA8F6900D22806 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6B009D011CCA8F6900D22806 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6B009D021CCA8F6900D22806 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6B009D051CCA8F6900D22806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B009D081CCA8F6900D22806 /* EllisNYC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllisNYC.xcdatamodel; sourceTree = "<group>"; };
 		6B009D0A1CCA8F6900D22806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,9 @@
 		6B009D1F1CCA8F6900D22806 /* EllisNYCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EllisNYCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B009D231CCA8F6900D22806 /* EllisNYCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EllisNYCUITests.m; sourceTree = "<group>"; };
 		6B009D251CCA8F6900D22806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DCFC8F1CCA9811006362B4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		B3DCFC911CCA983A006362B4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B3DCFC921CCA983A006362B4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +107,10 @@
 			children = (
 				6B009CFE1CCA8F6900D22806 /* AppDelegate.h */,
 				6B009CFF1CCA8F6900D22806 /* AppDelegate.m */,
-				6B009D011CCA8F6900D22806 /* ViewController.h */,
-				6B009D021CCA8F6900D22806 /* ViewController.m */,
+				B3DCFC911CCA983A006362B4 /* MainViewController.h */,
+				B3DCFC921CCA983A006362B4 /* MainViewController.m */,
 				6B009D041CCA8F6900D22806 /* Main.storyboard */,
+				B3DCFC8E1CCA9811006362B4 /* Model.xcdatamodeld */,
 				6B009D0A1CCA8F6900D22806 /* Assets.xcassets */,
 				6B009D0C1CCA8F6900D22806 /* LaunchScreen.storyboard */,
 				6B009D0F1CCA8F6900D22806 /* Info.plist */,
@@ -274,8 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B009D091CCA8F6900D22806 /* EllisNYC.xcdatamodeld in Sources */,
-				6B009D031CCA8F6900D22806 /* ViewController.m in Sources */,
+				B3DCFC901CCA9811006362B4 /* Model.xcdatamodeld in Sources */,
 				6B009D001CCA8F6900D22806 /* AppDelegate.m in Sources */,
+				B3DCFC931CCA983A006362B4 /* MainViewController.m in Sources */,
 				6B009CFD1CCA8F6900D22806 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +506,7 @@
 				6B009D2A1CCA8F6900D22806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B009D2B1CCA8F6900D22806 /* Build configuration list for PBXNativeTarget "EllisNYCTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +515,7 @@
 				6B009D2D1CCA8F6900D22806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B009D2E1CCA8F6900D22806 /* Build configuration list for PBXNativeTarget "EllisNYCUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +524,7 @@
 				6B009D301CCA8F6900D22806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -529,6 +536,16 @@
 			);
 			currentVersion = 6B009D081CCA8F6900D22806 /* EllisNYC.xcdatamodel */;
 			path = EllisNYC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B3DCFC8E1CCA9811006362B4 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B3DCFC8F1CCA9811006362B4 /* Model.xcdatamodel */,
+			);
+			currentVersion = B3DCFC8F1CCA9811006362B4 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
